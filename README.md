@@ -2,13 +2,26 @@
 
 This package contains the models used in Protect. 
 
-## How to install protect-models
+## Get Started
+Build and install the package:
 
-### Installation From Git Repo
+```sh
+jetpack build packages/protect-models && jetpack install packages/protect-models
+```
 
-## Contribute
+From the plugin folder, require the package using composer:
 
-## Get Help
+```sh
+composer require automattic/jetpack-protect-models
+```
+
+Then use it: (Example)
+
+```php
+use Automattic\Jetpack\Protect_Models\Status_Model;
+
+$empty_status = new Status_Model();
+```
 
 ## Using this package in your WordPress plugin
 
